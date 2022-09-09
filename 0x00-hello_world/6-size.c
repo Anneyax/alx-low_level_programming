@@ -6,17 +6,16 @@
  */
 int main(void)
 {
-int intType;
-float floatType;
-double doubleType;
-char charType;
-long longType;
-/* sizeof evaluates the size of a avariable*/
-printf("size of a char: %zu byte(s)\n", sizeof(charType));
-printf("size of an int: %zu byte(s)\n", sizeof(intType));
-printf("size of a long int: %zu byte(s)\n", sizeof(longType));
-printf("size of a long long int: %zu byte(s)\n", sizeof(doubleType));
-printf("size of a float: %zu byte(s)\n", sizeof(floatType));
-return (0);
-}
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float e;
 
+	printf("size of a char: %d byte(s)\n", sizeof(a));
+	printf("size of an int: %d byte(s)\n", sizeof(b));
+	printf("size of a long int: %d byte(s)\n", sizeof(c));
+	printf("size of a long long int: %d bytes(s)\n", sizeof(d));
+	printf("size of a float: %d byte(s)\n", sizeof(e));
+	return (0);
+}
